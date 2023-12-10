@@ -1,0 +1,38 @@
+Doctypehtml
+<html>
+<head>
+<title>REGISTRATION FORM </title>
+<script>
+function passvalues()
+{
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var address = document.getElementById("address").value;
+  localStorage.setItem("name",name);
+  localStorage.setItem("email",email);
+  localStorage.setItem("address",address);
+  return;
+}
+</script>
+</head>
+<style>
+body{
+   background-color: lightblue;
+}
+</style>
+<body>
+<h1>Registration form</h1>
+<form action="Details.html">
+<fieldset>
+<legend>Registration</legend>
+<lable>name </lable>
+<input type="text" id= "name"/><br><br>
+<lable>email </lable>
+<input type="email" id= "email"/><br><br>
+<lable>address </lable>
+<input type="address" id= "address"/><br><br>
+<input type="submit" value="submit" onclick="passsvalues()"/>
+</fieldset>
+</form>
+</body>
+full Stack development(20CS52I)
